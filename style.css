@@ -28,6 +28,7 @@
 }
 
 body{
+  background: rgba(233, 199, 199, 0.876);
   margin:0;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -40,7 +41,7 @@ h1{
   line-height: 1.5em;
   font-size: 40px;
   letter-spacing: -.2px;
-  color:rgb(250, 133, 225)
+  color:rgb(172, 99, 156)
 }
 h2{
   color:#8c11ff;
@@ -61,12 +62,12 @@ figure{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color:#2e0852;
-  color: white;
+  background-color:#f56afa;
+  color: rgb(245, 167, 225);
   height: 70px;
 }
 .header a{
-  color: white;
+  color: rgb(204, 9, 243);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -94,8 +95,8 @@ figure{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color:#1b2127;
-  color: white;
+  background-color:#390153;
+  color: rgb(250, 135, 170);
   height: 70px;
 }
 .logo img{
@@ -104,8 +105,8 @@ figure{
 }
 .footer{
   display: flex;
-  color: white;
-  background-color: #1b2127;
+  color: rgb(252, 177, 248);
+  background-color: #320441;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -124,7 +125,7 @@ figure{
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #f4fbff;
+  background-color:  rgba(248, 183, 203, 0.822);
 }
 .event img{
   width: 480px;
@@ -134,24 +135,25 @@ figure{
 .event-detail{
   margin:20px 40px;
   margin-top: -40px;
-  background-color: white;
+  background-color:#efbdfc7e;
   position: relative;
   padding: 20px;
   text-align: center;
 }
 .event p{
   text-align: center;
+  color: #550888;
 }
 .event a{
   margin: 10px;
   border: 1px solid;
   padding: 5px 20px;
   text-decoration: none;
-  color: #026fff;
-  border-radius: 5px;
+  color: #550888;
+  border-radius: 10px;
 }
 .footer a{
-  color: white;
+  color: rgb(190, 129, 160);
   padding: 0 10 px;
 }
 .texto_footer{
@@ -172,7 +174,7 @@ figure{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color:rgba(0,0,0,.8);
+  background-color:rgba(248, 204, 246, 0.8);
   display: none;
   line-height: 40px;
   text-align: center;
@@ -180,28 +182,30 @@ figure{
   z-index: 10;
   left: 5px;
   top: 5px;
-  color: white;
+  color: rgb(71, 3, 85);
 }
 
 @media screen and (max-width: 1024px){
   .container{
-    padding: 0 30px;
+    padding: 0 15px;
   }
   .event-title{
-    margin: 10px;
+    margin: 15px;
   }
   .event-detail h3{
     font-size: 30px;
   }
   .event-detail p{
     font-size: 19px;
+    margin-bottom: 30px;
+    color: #611385;
   }
 }
 
 @media screen and (max-width:992px) {
   .event{
-    width: 100%;
-    margin-bottom: 22px;
+    width: 70%;
+    margin-bottom: 30px;
   }
   .container{
     /*width: 100%;*/
@@ -210,9 +214,16 @@ figure{
   }
   .event img{
     width: 100%;
-    height: 250%;
+    height: 70%;
   }
+.event-detail p{
+font-size: 15px;
+margin-bottom: 30px;
+color: #7608a8;
 }
+}
+
+
 
 @media screen and (max-width: 768px){
   .event{
@@ -223,7 +234,7 @@ figure{
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #f4fbff;
+    background-color: #cc8f9e;
   }
   .container{
     /*width: 100%;*/
@@ -232,29 +243,33 @@ figure{
   }
   .event img{
     width: 100%;
-    height: 250%;
+    height: 50%;
   }
   .event-detail p{
-    font-size: 18px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #611385;
   }
   .event-title{
     margin: 15px;
     font-size: 23px;
   }
   .event-detail p{
-    font-size: 22px;
-    margin: 5px;
+    font-size: 15px;
+    margin: 25px;
   }
 }
 
 @media screen and (max-width:576px) {
   .event{
-    width: 100%;
-    margin-bottom: 30px;
+    width: 80%;
+    margin-bottom: 25px;
+    background-color: #cc8f9e;
   }
   .event-detail p {
     font-size: 15px;
     margin-bottom: 30px;
+    color: #611385;
   }
   
   .burger-button{
@@ -262,7 +277,7 @@ figure{
   }
   .menu{
     position: fixed;
-    background-color: rgb(236, 181, 250);
+    background-color:#ecc5cfb9;
     z-index: 1;
     top: 0;
     bottom: 0;
@@ -271,7 +286,7 @@ figure{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .5s;
+    transition: .10s;
   }
   .menu.is-active{
     left: 0;
@@ -294,7 +309,7 @@ figure{
     margin-bottom: .5em;
   }
   .header .logo {
-    text-align: center;
+    text-align: right;
     height: 50px;
     padding-top: 10px;
   }
