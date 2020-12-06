@@ -214,7 +214,7 @@ figure{
   }
   .event img{
     width: 100%;
-    height: 70%;
+    height: 200%;
   }
 .event-detail p{
 font-size: 15px;
@@ -243,7 +243,7 @@ color: #7608a8;
   }
   .event img{
     width: 100%;
-    height: 50%;
+    height: 200%;
   }
   .event-detail p{
     font-size: 15px;
@@ -282,7 +282,7 @@ color: #7608a8;
     top: 0;
     bottom: 0;
     left: -100vw;
-    width: 40vw;
+    width: 60vw;
     display: flex;
     align-items: center;
     justify-content: center;
